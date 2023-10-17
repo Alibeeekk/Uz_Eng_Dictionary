@@ -22,7 +22,7 @@ abstract class AppDataBase : RoomDatabase() {
                     AppDataBase::class.java,
                     "dict.db"
                 )
-                    .createFromAsset("database/dict.db")
+                    .createFromAsset("src/release/assets/database/dict.db")
                     .allowMainThreadQueries()
                     .build()
             }

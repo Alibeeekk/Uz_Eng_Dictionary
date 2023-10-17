@@ -31,6 +31,13 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
+    sourceSets {
+        release {
+            assets {
+                srcDirs 'src\\release\\assets'
+            }
+        }
+    }
 }
 
 dependencies {

@@ -10,7 +10,6 @@ interface WordDao {
     @Query("SELECT * FROM words")
     fun loadWord(): List<Word>
 
-//    @Query("SELECT * FROM words WHERE _id=:id")
-//    fun getWordByWord(id: Int): Word
+
 
 }
