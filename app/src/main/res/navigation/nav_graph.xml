@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/lugatFragment">
+
+    <fragment
+        android:id="@+id/lugatFragment"
+        android:name="dev.alibek.uz_rulugat.ui.fragment.LugatFragment"
+        android:label="fragment_lugat"
+        tools:layout="@layout/fragment_lugat" >
+        <action
+            android:id="@+id/action_lugatFragment_to_deatilsFragment"
+            app:destination="@id/deatilsFragment" />
+        <argument
+            android:name="DetailId"
+            app:argType="string"
+            android:defaultValue="1" />
+    </fragment>
+    <fragment
+        android:id="@+id/translateFragment"
+        android:name="dev.alibek.uz_rulugat.ui.fragment.TranslateFragment"
+        android:label="fragment_translate"
+        tools:layout="@layout/fragment_translate" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="dev.alibek.uz_rulugat.ui.fragment.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/deatilsFragment"
+        android:name="dev.alibek.uz_rulugat.ui.fragment.DeatilsFragment"
+        android:label="fragment_deatils"
+        tools:layout="@layout/fragment_deatils" />
+</navigation>

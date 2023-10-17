@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_trll"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.TranslateFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/toolbar_back">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/translater"
+                        android:textColor="@color/white"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/translate_bg"
+            android:gravity="bottom|center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:ignore="NestedWeights,UselessParent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_translate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:textColorHint="#81000000"
+                            android:hint="Enter text"
+                            android:minHeight="100dp"
+                            android:textColor="@color/black"
+                            android:textSize="26sp" />
+
+                        <TextView
+                            android:id="@+id/target_translateTv"
+                            android:layout_width="match_parent"
+                            android:textSize="26sp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="" />
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/b1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:background="#E48613"
+                            android:textSize="16sp"
+                            android:text="SELECT"
+                            app:backgroundTint="@null"
+                            app:cornerRadius="10dp" />
+
+                        <ImageView
+                            android:id="@+id/image_refresh"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_refresh" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/b2"
+                            android:layout_width="0dp"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#E48613"
+                            android:text="SELECT"
+                            android:textSize="16sp"
+                            app:backgroundTint="@null"
+                            app:cornerRadius="10dp" />
+
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:text="@string/translater"
+                        android:background="#F59701"
+                        android:textSize="18sp"
+                        app:backgroundTint="@null"
+                        android:id="@+id/b_translate"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="10dp"
+                        app:cornerRadius="10dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

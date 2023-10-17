@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name" translatable="false">Uz-En Dictionary</string>
+    <string name="dictionary">Dictionary</string>
+    <string name="about">About</string>
+    <string name="uz">UZ</string>
+    <string name="en">EN</string>
+    <string name="search">Search</string>
+    <string name="translater">Translator</string>
+    <string name="dictionary_list">Dictionary list</string>
+    <string name="name">Name</string>
+    <string name="english">ENGLISH</string>
+    <string name="uzbek">UZBEK</string>
+    <string name="enter_english">Enter a word</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="uzbekcha_inglizcha_lug_at">Uzbek - English dictionary</string>
+    <string name="ushbu_ilova_data_ta_lim_stansiyasi_no_quvchisi_alibek_otaboyevning_nbirinchi_yaratgan_ilovasi">This application is the first application created by Alibek Otaboyev, a student of the Data Training Station</string>
+
+</resources>
